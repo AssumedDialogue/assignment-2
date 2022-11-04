@@ -10,18 +10,21 @@
 #    using Visual Studio Code IDE
 ##############
 
-class Calcuations:
-    def SMP(): #Simulate Monthly Production 
-        print("bleh for now")
-    def SOTP(): #sale of the product
-        print("bleh for now")
-print("Welcome to Programming Principles Sample Product Inventory")
-PC = input("Please enter the Product Code: ")
-PN = input("Please enter the Product Name: ")
-CS = input("Please enter the Current Stock: ")
-SP = input("Please enter the Product Sale Price: ")
-MC = input("Please enter the Product Manufacture Cost: ")
-ESMP = input("Please enter Estimated Monthly Production: ")
+
+import random
 print("******Programming Principles Sample Stock Statement******")
 
+class Calcuations: #class manipulates the variables
+    def __init__(self): #creat new variable
+        print("Welcome to Programming Principles Sample Product Inventory")
+        self.PC = input("Please enter the Product Code: ")
+        self.PN = input("Please enter the Product Name: ")
+        self.CS = input("Please enter the Current Stock: ")
+        self.SP = input("Please enter the Product Sale Price: ")
+        self.MC = input("Please enter the Product Manufacture Cost: ")
+        self.ESMP = input("Please enter Estimated Monthly Production: ")
+    def calcUnitsSold(self):
+        mon=random.randrange(90,120)
 
+P1 = Calcuations()  #Instantiate an object (product 1)
+P2 = Calcuations()  #second object(product 1)
