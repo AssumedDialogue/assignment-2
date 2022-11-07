@@ -12,7 +12,6 @@
 
 
 import random
-print("******Programming Principles Sample Stock Statement******")
 
 class Calcuations: #class manipulates the variables
     def __init__(self): #creat new variable
@@ -23,8 +22,13 @@ class Calcuations: #class manipulates the variables
         self.SP = input("Please enter the Product Sale Price: ")
         self.MC = input("Please enter the Product Manufacture Cost: ")
         self.ESMP = input("Please enter Estimated Monthly Production: ")
-    def calcUnitsSold(self):
+        self.calc()
+    def calc(self):
+        #insert loop to do twelve times
+          #set manufactured units 
+          # random num of sold
+          # predicted stock
         mon=random.randrange(90,120)
 
 P1 = Calcuations()  #Instantiate an object (product 1)
-P2 = Calcuations()  #second object(product 1)
+P2 = Calcuations()  #second object(product 2)
