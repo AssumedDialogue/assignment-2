@@ -29,7 +29,7 @@ class Calcuations: #class manipulates the variables
         while i < 12:
             i += 1
             B=random.randrange(90,120)
-            print("Month: ", i, "***************",'\n','\n', "Manufactured Units: ", self.ESMP, '\n', "Units Sold: ", B, '\n', "Current Stock: ", self.ESMP,'\n')  #set manufactured units, random num of sold, predicted stock
+            print("Month: ", i, "***************",'\n','\n', "Manufactured Units: ", self.ESMP, '\n', "Units Sold: ", B, '\n', "Current Stock: ", self.CS,'\n')  #set manufactured units, random num of sold, predicted stock
         
 
 P1 = Calcuations()  #Instantiate an object (product 1)
