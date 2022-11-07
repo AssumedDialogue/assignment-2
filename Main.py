@@ -14,21 +14,23 @@
 import random
 
 class Calcuations: #class manipulates the variables
-    def __init__(self): #creat new variable
+    def __init__(self): #create new variable
         print("Welcome to Programming Principles Sample Product Inventory")
-        self.PC = input("Please enter the Product Code: ")
+        self.PC = input("Please enter the Product Code: ") # left this as a string because the number doesn't represent a numeric value
         self.PN = input("Please enter the Product Name: ")
-        self.CS = input("Please enter the Current Stock: ")
-        self.SP = input("Please enter the Product Sale Price: ")
-        self.MC = input("Please enter the Product Manufacture Cost: ")
-        self.ESMP = input("Please enter Estimated Monthly Production: ")
-        self.calc()
+        self.CS = int(input("Please enter the Current Stock: "))
+        self.SP = int (input("Please enter the Product Sale Price: "))
+        self.MC = int(input("Please enter the Product Manufacture Cost: "))
+        self.ESMP = int(input("Please enter Estimated Monthly Production: "))
+        self.calc()  #calling other function
     def calc(self):
         #insert loop to do twelve times
-          #set manufactured units 
-          # random num of sold
-          # predicted stock
-        mon=random.randrange(90,120)
+        i = 0
+        while i < 12:
+            i += 1
+            B=random.randrange(90,120)
+            print("Month: ", i, "***************",'\n','\n', "Manufactured Units: ", self.ESMP, '\n', "Units Sold: ", B, '\n', "Current Stock: ", self.ESMP,'\n')  #set manufactured units, random num of sold, predicted stock
+        
 
 P1 = Calcuations()  #Instantiate an object (product 1)
 P2 = Calcuations()  #second object(product 2)
