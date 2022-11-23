@@ -10,3 +10,15 @@ class interaction: #handles the interaction with the user
         print("bleh")
     def showMainMenu(self):
         print("bleh")
+    def showAccountMenu(self):
+        print("bleh")
+
+class account:
+    jj
+class SavingsAccount:
+    kk
+class ChecquingAccount:
+    jj
+class Bank:
+    jj
+    
