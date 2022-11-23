@@ -12,7 +12,9 @@ class Program: #handles the interaction with the user
         while True:
             self.User3=input("Select one fromt the following menu:"+'\n'+"1. Check balance"+'\n'+"2. Deposit"+'\n'+"3. Withdraw Money"+'\n'+"4. Exit Account")
             if self.User3 in self.AMChoice:
-                break    
+                break
+            else:
+                print("sorry you did not enter a valid option please try again")    
     def showMainMenu(self):
         self.MMChoice= ("1","2")
         while True:
@@ -46,7 +48,12 @@ class SavingsAccount:
 class ChecquingAccount:
     print()
 class Bank:
-    print()
+    def __init__(self,initId,): #constructor
+        FirstAccount=12
+    def searchAccount(Program):
+        getA()
+        print()
+    
 p=Program()
 p.showMainMenu()
 
