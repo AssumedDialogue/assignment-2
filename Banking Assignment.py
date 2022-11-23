@@ -7,10 +7,18 @@
 
 
 class Program: #handles the interaction with the user
-    def __init__(self): #constructor method
-        print("bleh")
     def showMainMenu(self):
-        self.MMChoice= input("Welcome to the Bank1! (please select an option)",'\n',"1. Select account (type 1)",'\n',"2. Exit Program (type 2)")
+            self.MMChoice= ("1","2")
+            while True:
+                self.user1=input("Welcome to the Bank! (please select an option)",'\n',"1. Select account (type 1)",'\n',"2. Exit Program (type 2)")
+                if self.user1 in self.MMChoice:
+                    break
+                if self.user1 == "1":
+                    self.SAChoice = input("Select an Account from the following menu:",'\n',"1.account 1",'\n',"2.account 2",'\n',"3.account 3",'\n',"4.account 4",'\n',"5.account 5")
+                if self.user1 == "2":
+                    exit
+
+            print("sorry you did not enter a valid option please try again")
     def showAccountMenu(self):
         self.AMChoice("Select one fromt the following menu:",'\n',"1. Check balance",'\n',"2. Deposit",'\n',"3. Withdraw Money", '\n',"4. Exit Account")
 
